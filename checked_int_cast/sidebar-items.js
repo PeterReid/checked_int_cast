@@ -1,0 +1,1 @@
+initSidebarItems({"trait":[["CheckedIntCast","This trait allows a value to be cast to the various primitive integer types. If the conversion overflows or underflows, the functions return `None`."]]});

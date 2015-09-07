@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `CheckedIntCast` trait in crate `checked_int_cast`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, CheckedIntCast">
+
+    <title>checked_int_cast::CheckedIntCast - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>checked_int_cast</a></p><script>window.sidebarCurrent = {name: 'CheckedIntCast', ty: 'trait', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content trait">
+<h1 class='fqn'><span class='in-band'>Trait <a href='index.html'>checked_int_cast</a>::<wbr><a class='trait' href=''>CheckedIntCast</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-16' class='srclink' href='../src/checked_int_cast/lib.rs.html#87-98' title='goto source code'>[src]</a></span></h1>
+<pre class='rust trait'>pub trait CheckedIntCast {
+    fn <a href='#tymethod.as_isize_checked' class='fnname'>as_isize_checked</a>(self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.isize.html'>isize</a>&gt;;
+    fn <a href='#tymethod.as_i8_checked' class='fnname'>as_i8_checked</a>(self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i8.html'>i8</a>&gt;;
+    fn <a href='#tymethod.as_i16_checked' class='fnname'>as_i16_checked</a>(self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a>&gt;;
+    fn <a href='#tymethod.as_i32_checked' class='fnname'>as_i32_checked</a>(self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;;
+    fn <a href='#tymethod.as_i64_checked' class='fnname'>as_i64_checked</a>(self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>&gt;;
+    fn <a href='#tymethod.as_usize_checked' class='fnname'>as_usize_checked</a>(self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>&gt;;
+    fn <a href='#tymethod.as_u8_checked' class='fnname'>as_u8_checked</a>(self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;;
+    fn <a href='#tymethod.as_u16_checked' class='fnname'>as_u16_checked</a>(self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a>&gt;;
+    fn <a href='#tymethod.as_u32_checked' class='fnname'>as_u32_checked</a>(self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>&gt;;
+    fn <a href='#tymethod.as_u64_checked' class='fnname'>as_u64_checked</a>(self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a>&gt;;
+}</pre><div class='docblock'><p>This trait allows a value to be cast to the various primitive integer types.
+If the conversion overflows or underflows, the functions return <code>None</code>.</p>
+</div>
+            <h2 id='required-methods'>Required Methods</h2>
+            <div class='methods'>
+        <h3 id='tymethod.as_isize_checked' class='method stab '><code>fn <a href='#tymethod.as_isize_checked' class='fnname'>as_isize_checked</a>(self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.isize.html'>isize</a>&gt;</code></h3><h3 id='tymethod.as_i8_checked' class='method stab '><code>fn <a href='#tymethod.as_i8_checked' class='fnname'>as_i8_checked</a>(self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i8.html'>i8</a>&gt;</code></h3><h3 id='tymethod.as_i16_checked' class='method stab '><code>fn <a href='#tymethod.as_i16_checked' class='fnname'>as_i16_checked</a>(self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a>&gt;</code></h3><h3 id='tymethod.as_i32_checked' class='method stab '><code>fn <a href='#tymethod.as_i32_checked' class='fnname'>as_i32_checked</a>(self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;</code></h3><h3 id='tymethod.as_i64_checked' class='method stab '><code>fn <a href='#tymethod.as_i64_checked' class='fnname'>as_i64_checked</a>(self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>&gt;</code></h3><h3 id='tymethod.as_usize_checked' class='method stab '><code>fn <a href='#tymethod.as_usize_checked' class='fnname'>as_usize_checked</a>(self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>&gt;</code></h3><h3 id='tymethod.as_u8_checked' class='method stab '><code>fn <a href='#tymethod.as_u8_checked' class='fnname'>as_u8_checked</a>(self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;</code></h3><h3 id='tymethod.as_u16_checked' class='method stab '><code>fn <a href='#tymethod.as_u16_checked' class='fnname'>as_u16_checked</a>(self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a>&gt;</code></h3><h3 id='tymethod.as_u32_checked' class='method stab '><code>fn <a href='#tymethod.as_u32_checked' class='fnname'>as_u32_checked</a>(self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>&gt;</code></h3><h3 id='tymethod.as_u64_checked' class='method stab '><code>fn <a href='#tymethod.as_u64_checked' class='fnname'>as_u64_checked</a>(self) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a>&gt;</code></h3></div>
+        <h2 id='implementors'>Implementors</h2>
+        <ul class='item-list' id='implementors-list'>
+    <li><code>impl <a class='trait' href='../checked_int_cast/trait.CheckedIntCast.html' title='checked_int_cast::CheckedIntCast'>CheckedIntCast</a> for <a href='http://doc.rust-lang.org/nightly/std/primitive.isize.html'>isize</a></code></li>
+<li><code>impl <a class='trait' href='../checked_int_cast/trait.CheckedIntCast.html' title='checked_int_cast::CheckedIntCast'>CheckedIntCast</a> for <a href='http://doc.rust-lang.org/nightly/std/primitive.i8.html'>i8</a></code></li>
+<li><code>impl <a class='trait' href='../checked_int_cast/trait.CheckedIntCast.html' title='checked_int_cast::CheckedIntCast'>CheckedIntCast</a> for <a href='http://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a></code></li>
+<li><code>impl <a class='trait' href='../checked_int_cast/trait.CheckedIntCast.html' title='checked_int_cast::CheckedIntCast'>CheckedIntCast</a> for <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></li>
+<li><code>impl <a class='trait' href='../checked_int_cast/trait.CheckedIntCast.html' title='checked_int_cast::CheckedIntCast'>CheckedIntCast</a> for <a href='http://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a></code></li>
+<li><code>impl <a class='trait' href='../checked_int_cast/trait.CheckedIntCast.html' title='checked_int_cast::CheckedIntCast'>CheckedIntCast</a> for <a href='http://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a></code></li>
+<li><code>impl <a class='trait' href='../checked_int_cast/trait.CheckedIntCast.html' title='checked_int_cast::CheckedIntCast'>CheckedIntCast</a> for <a href='http://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a></code></li>
+<li><code>impl <a class='trait' href='../checked_int_cast/trait.CheckedIntCast.html' title='checked_int_cast::CheckedIntCast'>CheckedIntCast</a> for <a href='http://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a></code></li>
+<li><code>impl <a class='trait' href='../checked_int_cast/trait.CheckedIntCast.html' title='checked_int_cast::CheckedIntCast'>CheckedIntCast</a> for <a href='http://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code></li>
+<li><code>impl <a class='trait' href='../checked_int_cast/trait.CheckedIntCast.html' title='checked_int_cast::CheckedIntCast'>CheckedIntCast</a> for <a href='http://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a></code></li>
+</ul><script type="text/javascript" async
+                              src="../implementors/checked_int_cast/trait.CheckedIntCast.js">
+                      </script></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+            <p>
+                Search functions by type signature (e.g.
+                <code>vec -> usize</code>)
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "checked_int_cast";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>
