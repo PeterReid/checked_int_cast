@@ -20,8 +20,10 @@
 //! assert_eq!((-1i8).as_u32_checked(), None);
 //! ```
 
-use std::{i8, i16, i32, i64, isize};
-use std::{u8, u16, u32, u64, usize};
+#![no_std]
+
+use core::{i8, i16, i32, i64, isize};
+use core::{u8, u16, u32, u64, usize};
 
 // The only subtle thing about these implementations is that we need to skip
 // the comparison with MAX if we might get overflow in that comparison.
@@ -157,7 +159,7 @@ mod test {
     fn negative_to_unsigned() {
         assert_eq!((-4i8).as_u64_checked(), None);
         assert_eq!((-1i32).as_usize_checked(), None);
-        assert_eq!(::std::i32::MIN.as_usize_checked(), None);
+        assert_eq!(::core::i32::MIN.as_usize_checked(), None);
         assert_eq!((-3053i64).as_u32_checked(), None);
     }
 
